@@ -5,3 +5,14 @@ import '../styles/main.scss';
 
 // \/ All of your javascript should go here \/
 
+
+let promise = new Promise(function(resolve, reject) {
+ 
+    setTimeout(function()  {resolve("done");},6000);
+  });
+
+  promise.then(function(){
+       var mymodel = document.querySelector('.modal')
+       mymodel.style.display='block'
+
+  })
